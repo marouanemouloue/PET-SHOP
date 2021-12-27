@@ -7,7 +7,7 @@
             <li><a href="category.html">pets</a></li>
             <li><a href="specials.html">specials pets</a></li>
             <li><a href="myaccount.html">my accout</a></li>
-            <li><a href="register.html">register</a></li>
+            <li><a href="register.jsp">register</a></li>
             <li><a href="details.html">prices</a></li>
             <li><a href="contact.html">contact</a></li>
             </ul>
