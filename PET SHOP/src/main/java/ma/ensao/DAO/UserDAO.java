@@ -20,7 +20,7 @@ public class UserDAO {
 		Class.forName("com.mysql.cj.jdbc.Driver");	
 		
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/petshopdb", "root", "");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:8889/petshopdb", "root","root");
 			PreparedStatement preparedStatement = connection.prepareStatement(insertuser);
 			preparedStatement.setString(1, user.getName());
 			preparedStatement.setString(2, user.getPassword());
