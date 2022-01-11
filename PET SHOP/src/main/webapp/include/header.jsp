@@ -4,7 +4,7 @@
             <ul>                                                                       
             <li class="selected"><a href="index.jsp">home</a></li>
             <li><a href="aboutUs.jsp">about us</a></li>
-            <li><a href="category.html">pets</a></li>
+            <li><a href="category.jsp">Category</a></li>
             <li><a href="specials.html">specials pets</a></li>
             <li><a href="myaccount.html">my accout</a></li>
             <li><a href="register.html">register</a></li>
