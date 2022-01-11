@@ -14,7 +14,7 @@
     <div class="center_content">
       	<div class="left_content">
         	
-            <div class="title"><span class="title_icon"><img src="assets/images/bullet1.gif" alt="" title="" /></span>Featured pets</div>
+            <div class="title"><span class="title_icon"><img src="assets/images/bullet1.gif" alt="" title="" /></span>Popular products</div>
         
         	<div class="feat_prod_box">
             
@@ -55,7 +55,7 @@
             
             
             
-           <div class="title"><span class="title_icon"><img src="assets/images/bullet2.gif" alt="" title="" /></span>New pets</div> 
+           <div class="title"><span class="title_icon"><img src="assets/images/bullet2.gif" alt="" title="" /></span>New products</div> 
            
            <div class="new_products">
            
