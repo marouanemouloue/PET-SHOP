@@ -66,6 +66,33 @@ public class ProductsDAO {
 		
 	
 	};
+	public Products getOneProduct(String name) throws ClassNotFoundException, SQLException{
+
+
+		Connection con = condb.getConnectionDB();
+		PreparedStatement state = con.prepareStatement("SELECT * FROM products WHERE nom = ?");
+		state.setString(1, name);
+		ResultSet res = state.executeQuery();
+		while(res.next()) {
+			
+			
+				Products prod = new Products();
+			prod.setNom(res.getString("nom"));
+			prod.setPrix(res.getFloat("prix"));
+			prod.setDetails(res.getString("details"));
+			prod.setCategorie(res.getString("categorie"));
+			prod.setVentes(res.getInt("ventes"));
+			prod.setImage(res.getString("image"));
+			prod.setPromotion(res.getInt("promotion"));
+			return prod;
+			}
+	
+		
+		return null;
+		
+		
+	
+	};
 	public ArrayList<Products>  getProductsByCategory(String nom) throws ClassNotFoundException, SQLException{
 
 		ArrayList<Products> list = new ArrayList<Products>();
