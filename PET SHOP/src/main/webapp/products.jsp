@@ -30,7 +30,7 @@
   <div class="new_prod_box">
    <a href="details.html"><%= prod.getNom() %></a>
      <div class="new_prod_bg">
-         <a href="details.html"><img src="assets/images/<%= prod.getImage() %>.gif" alt="" title="" class="thumb" border="0" /></a>
+         <a href="details.html"><img src="assets/images/<%= prod.getImage() %>.png" alt="" title="" class="thumb" border="0" /></a>
      </div>           
   </div>   
 <% }; %>
