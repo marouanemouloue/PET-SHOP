@@ -19,5 +19,34 @@
     <servlet-name>RegisterUser</servlet-name>
     <url-pattern>/register.do</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <description></description>
+    <display-name>Details</display-name>
+    <servlet-name>Details</servlet-name>
+    <servlet-class>ma.ensao.servlet.Details</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Details</servlet-name>
+    <url-pattern>/Details</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Search</display-name>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>ma.ensao.servlet.Search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Account</display-name>
+    <servlet-name>Account</servlet-name>
+    <servlet-class>ma.ensao.servlet.Account</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Account</servlet-name>
+    <url-pattern>/Account</url-pattern>
+  </servlet-mapping>
 </web-app>

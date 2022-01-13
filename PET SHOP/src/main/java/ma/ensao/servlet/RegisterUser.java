@@ -49,12 +49,12 @@ public class RegisterUser extends HttpServlet {
 		user.setAddress(request.getParameter("address"));
 		
 		try {
-			
-			if(!userDAO.registerUser(user))
-				System.out.println("Enregistrement effectuer avec succès ");
+			userDAO.registerUser(user);	
+					
+				System.out.println("Enregistrement effectuer avec succes ");
 		}catch (Exception e) {
 			e.printStackTrace();
-			/// TODO créer la page de gestion des erreurs 
+			/// TODO crï¿½er la page de gestion des erreurs 
 		}
 		
 		 // redirection vers l'accueil 

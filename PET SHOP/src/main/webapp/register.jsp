@@ -1,32 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta charset="UTF-8">
 <title>Pet Shop</title>
 <%@ include file="include/style.jsp" %>
+
 </head>
 <body>
 <div id="wrap">
-
-       <div class="header">
-       		<div class="logo"><a href="index.jsp"><img src="assets/images/logo.gif" alt="" title="" border="0" /></a></div>            
-        <div id="menu">
-            <ul>                                                                       
-            <li><a href="index.jsp">home</a></li>
-            <li><a href="about.jsp">about us</a></li>
-            <li><a href="category.html">pets</a></li>
-            <li><a href="specials.html">specials pets</a></li>
-            <li><a href="myaccount.html">my accout</a></li>
-            <li class="selected"><a href="register.jsp">register</a></li>
-            <li><a href="details.html">prices</a></li>
-            <li><a href="contact.html">contact</a></li>
-            </ul>
-        </div>     
-            
-            
-       </div> 
+<%@ include file="include/header.jsp" %>
        
        
        <div class="center_content">
