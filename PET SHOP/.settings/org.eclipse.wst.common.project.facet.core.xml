@@ -4,6 +4,10 @@
   <fixed facet="jst.web"/>
   <fixed facet="wst.jsdt.web"/>
   <installed facet="wst.jsdt.web" version="1.0"/>
+<<<<<<< HEAD
   <installed facet="java" version="9"/>
+=======
+  <installed facet="java" version="14"/>
+>>>>>>> branch 'master' of https://github.com/marouanemouloue/PET-SHOP.git
   <installed facet="jst.web" version="2.5"/>
 </faceted-project>

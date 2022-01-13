@@ -1,12 +1,12 @@
-       <div class="header">
+     <div class="header">
    		<!--  <div class="logo"><a href="index.html"><img src="<%= request.getContextPath() %>/assets/images/logo.gif" alt="" title="" border="0" /></a></div>            
      -->   <div id="menu">
-            <ul>                                                                       
-            <li class="selected"><a href="index.jsp">Home</a></li>
+            <ul>
+<li class="selected"><a href="index.jsp">Home</a></li>
             <li><a href="aboutUs.jsp">About us</a></li>
             <li><a href="category.html">Categories</a></li>
             <li><a href="myaccount.html">My account</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="register.jsp">Register</a></li>
             <li><a href="contact.html">Contact</a></li>
             
             
@@ -21,7 +21,6 @@
         </li>
         </ul>
         </div>     
-        
             
             
        </div> 
