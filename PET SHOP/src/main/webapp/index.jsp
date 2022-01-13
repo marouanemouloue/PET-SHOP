@@ -1,6 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import ="java.util.ArrayList"%>
+    <%@ page import="ma.ensao.bean.*" %>
+        <%@ page import="ma.ensao.DAO.*" %>
 <!DOCTYPE html>
+  <%	    ProductsDAO produit = new ProductsDAO();
+
+    ArrayList<Products> listFood = new ArrayList<Products> ();
+    listFood=(ArrayList<Products>) produit.getProductsByCategory("Foods");
+    ArrayList<Products> listAccesoires = new ArrayList<Products> ();
+    listAccesoires=(ArrayList<Products>) produit.getProductsByCategory("Accessory");
+    ArrayList<Products> listToys = new ArrayList<Products> ();
+    listToys=(ArrayList<Products>) produit.getProductsByCategory("Toys");
+       
+       %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -13,79 +26,99 @@
 <%@ include file="include/header.jsp" %>
     <div class="center_content">
       	<div class="left_content">
+      	
         	
-            <div class="title"><span class="title_icon"><img src="assets/images/bullet1.gif" alt="" title="" /></span>Featured pets</div>
-        
-        	<div class="feat_prod_box">
-            
-            	<div class="prod_img"><a href="details.html"><img src="assets/images/prod1.gif" alt="" title="" border="0" /></a></div>
-                
-                <div class="prod_det_box">
-                	<div class="box_top"></div>
-                    <div class="box_center">
-                    <div class="prod_title">Product name</div>
-                    <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                    <a href="details.html" class="more">- more details -</a>
-                    <div class="clear"></div>
-                    </div>
+<section class="product">
+        <h2 class="product-category">Food</h2>
+     
+        <div class="product-container">
+ 				    <% for(Products prod : listFood) {%> 
+ 		
+            <div class="product-card">
+                <div class="product-image">
+
+                    <a href="Details?name=<%=prod.getNom() %>"><img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt=""></a>
+                    <button class="card-btn">Buy now</button>
                     
-                    <div class="box_bottom"></div>
-                </div>    
-            <div class="clear"></div>
-            </div>	
-            
-            
-        	<div class="feat_prod_box">
-            
-            	<div class="prod_img"><a href="details.html"><img src="assets/images/prod2.gif" alt="" title="" border="0" /></a></div>
-                
-                <div class="prod_det_box">
-                	<div class="box_top"></div>
-                    <div class="box_center">
-                    <div class="prod_title">Product name</div>
-                    <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                    <a href="details.html" class="more">- more details -</a>
-                    <div class="clear"></div>
+                </div>
+                <div class="product-info">
+                    <div class="type">
+                        <a href="Details?name=<%=prod.getNom() %>"><%= prod.getNom() %></a>
+                      
                     </div>
-                    
-                    <div class="box_bottom"></div>
-                </div>    
-            <div class="clear"></div>
-            </div>      
-            
-            
-            
-           <div class="title"><span class="title_icon"><img src="assets/images/bullet2.gif" alt="" title="" /></span>New pets</div> 
+                    <!--price-------->
+                    <a href="Details?name=<%=prod.getNom() %>" class="price"><%= prod.getPrix() %>DH</a>
+                </div>
+            </div>
+            <%}%>
+            </div>
+
            
-           <div class="new_products">
-           
-                    <div class="new_prod_box">
-                        <a href="details.html">product name</a>
-                        <div class="new_prod_bg">
-                        <span class="new_icon"><img src="assets/images/new_icon.gif" alt="" title="" /></span>
-                        <a href="details.html"><img src="assets/images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
-                        </div>           
+    </section>
+
+    <section class="product">
+        <h2 class="product-category">Accessoires</h2>
+       <button class="pre-btn"><img src="assets/images/nextPage.png" alt=""></button>
+        <button class="nxt-btn"><img src="assets/images/nextPage.png" alt=""></button>
+        <div class="product-container">
+ 				<% for(Products prod : listAccesoires) {  %>	
+            <div class="product-card">
+                <div class="product-image">
+
+                    <img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Buy now</button>
+                    
+                </div>
+                <div class="product-info">
+                    <div class="type">
+                        <a href="#"><%= prod.getNom() %></a>
+                      
                     </div>
+                    <!--price-------->
+                    <a href="#" class="price"><%= prod.getPrix() %>DH</a>
+                </div>
+            </div>
+            <%}%>
+            </div>
+              
+    </section>
+    <section class="product">
+        <h2 class="product-category">Food</h2>
+        <button class="pre-btn"><img src="assets/images/nextPage.png" alt=""></button>
+        <button class="nxt-btn"><img src="assets/images/nextPage.png" alt=""></button>
+        <div class="product-container">
+ 				    <% for(Products prod : listToys) {%> 
+ 		
+            <div class="product-card">
+                <div class="product-image">
+
+                    <img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Buy now</button>
                     
-                    <div class="new_prod_box">
-                        <a href="details.html">product name</a>
-                        <div class="new_prod_bg">
-                        <span class="new_icon"><img src="assets/images/new_icon.gif" alt="" title="" /></span>
-                        <a href="details.html"><img src="assets/images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
-                        </div>           
-                    </div>                    
-                    
-                    <div class="new_prod_box">
-                        <a href="details.html">product name</a>
-                        <div class="new_prod_bg">
-                        <span class="new_icon"><img src="assets/images/new_icon.gif" alt="" title="" /></span>
-                        <a href="details.html"><img src="assets/images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a>
-                        </div>           
-                    </div>          
-            
-            </div> 
-          
-            
+                </div>
+                <div class="product-info">
+                    <div class="type">
+                        <a href="#"><%= prod.getNom() %></a>
+                      
+                    </div>
+                    <!--price-------->
+                    <a href="#" class="price"><%= prod.getPrix() %>DH</a>
+                </div>
+            </div>
+            <%}%>
+            </div>
+
+           
+    </section>
+
+
+
+
+
+
+
+
+             
         <div class="clear"></div>
         </div><!--end of left content-->
       <%@ include file="include/rightContent.jsp" %>
@@ -94,5 +127,6 @@
        </div><!--end of center content-->
        <%@include file="include/footer.jsp" %>
 </div>
+<%@ include file="include/js.jsp" %>
 </body>
 </html>

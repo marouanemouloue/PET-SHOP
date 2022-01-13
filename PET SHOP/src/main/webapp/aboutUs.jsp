@@ -18,7 +18,7 @@
         	<div class="feat_prod_box_details">
             <p class="details">
            
-            ur mission is to provide dog and cat parents with everything that they need to ensure their pet lives a long and happy life. We love to talk about pets of all types and we are even more excited when you bring your furry family member into the store to meet us! We are constantly researching and learning about new products that can make our pets lives better. 
+             Our mission is to provide dog and cat parents with everything that they need to ensure their pet lives a long and happy life. We love to talk about pets of all types and we are even more excited when you bring your furry family member into the store to meet us! We are constantly researching and learning about new products that can make our pets lives better. 
 
 Our goal is to provide a clean, pet friendly store that has everything that your dog or cat needs. While our store is not very large, we offer an experience that is fast, friendly, local, and less expensive that the "Big Box" pet stores. 
 
