@@ -4,10 +4,11 @@
             <ul>
 <li class="selected"><a href="index.jsp">Home</a></li>
             <li><a href="aboutUs.jsp">About us</a></li>
-           <li><a href="myaccount.html">My account</a></li>
+            <li><a href="category.jsp">Categories</a></li>
+            <li><a href="myaccount.html">My account</a></li>
             <li><a href="register.jsp">Register</a></li>
             <li><a href="contact.html">Contact</a></li>
-             <li><a href="cart.jsp">Cart</a></li>
+            
             
             <li>
             

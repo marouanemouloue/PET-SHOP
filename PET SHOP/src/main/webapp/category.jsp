@@ -57,7 +57,7 @@
     </section>
 
     <section class="product">
-        <h2 class="product-category">Accessoires</h2>
+        <h2 class="product-category">Accessories</h2>
        <button class="pre-btn"><img src="assets/images/nextPage.png" alt=""></button>
         <button class="nxt-btn"><img src="assets/images/nextPage.png" alt=""></button>
         <div class="product-container">

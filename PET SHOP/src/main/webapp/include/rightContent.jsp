@@ -66,31 +66,20 @@
              	<div class="title"><span class="title_icon"><img src="assets/images/bullet5.gif" alt="" title="" /></span>Categories</div> 
                 
                 <ul class="list">
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">hollidays gifts</a></li>
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">hollidays gifts</a></li>
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>                                              
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Accessories</a></li>
+                                                        
                 </ul>
                 
              	<div class="title"><span class="title_icon"><img src="assets/images/bullet6.gif" alt="" title="" /></span>Partners</div> 
                 
                 <ul class="list">
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">hollidays gifts</a></li>
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">hollidays gifts</a></li>
-                <li><a href="#">accesories</a></li>                              
+                <li><a href="#">Maroc Telecom</a></li>
+                <li><a href="#">UNESCO</a></li>
+                <li><a href="#">WHO</a></li>
+                <li><a href="#">Animal World Organization</a></li>
+                                         
                 </ul>      
              
              </div>         
