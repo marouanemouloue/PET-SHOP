@@ -11,13 +11,18 @@
             
             
             <li>
-            
+           <form method="get" action="Search"> 
    <div class="search">
-      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+   
+      <input type="text" name="search" class="searchTerm" placeholder="What are you looking for?">
+      
       <button type="submit" class="searchButton">
         <i class="fa fa-search"></i>
      </button>
+
+    
    </div>
+   </form>
         </li>
         </ul>
         </div>     

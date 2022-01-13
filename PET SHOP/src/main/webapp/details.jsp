@@ -42,7 +42,7 @@
         <!-- Product Pricing -->
         <div class="product-price">
             <span>${produit.prix}$</span>
-            <a href="#" class="cart-btn">Add to cart</a>
+            <a href="cart.jsp?idproduct=${produit.nom }" class="cart-btn">Add to cart</a>
         </div>
     </div>
 </main>
