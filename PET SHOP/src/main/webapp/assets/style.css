@@ -54,7 +54,7 @@ background:url(images/LogoPetshop.jpg) no-repeat center;
 /*-----------------------------menu-------------------*/
 
 #menu{
-width:750px;
+width:inherit;
 height:30px;
 float:left;
 padding:205px 0 0 10px;
@@ -120,7 +120,7 @@ padding:2px 2px 0 2px;
 }
 
 .search {
-  width: 30%;
+  width: 25%;
   position: relative;
   display: flex;
   margin-bottom: 5px

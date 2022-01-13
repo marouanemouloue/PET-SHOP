@@ -12,6 +12,9 @@
     listAccesoires=(ArrayList<Products>) produit.getProductsByCategory("Accessory");
     ArrayList<Products> listToys = new ArrayList<Products> ();
     listToys=(ArrayList<Products>) produit.getProductsByCategory("Toys");
+    ArrayList<Products> list = new ArrayList<Products> ();
+
+    list = (ArrayList<Products>) produit.getProductsList();
        
        %>
 <html>
@@ -29,16 +32,16 @@
       	
         	
 <section class="product">
-        <h2 class="product-category">Food</h2>
+        <h2 class="product-category">ALL PRODUCTS</h2>
      
         <div class="product-container">
- 				    <% for(Products prod : listFood) {%> 
+ 				    <% for(Products prod : list) {%> 
  		
             <div class="product-card">
                 <div class="product-image">
 
                     <a href="Details?name=<%=prod.getNom() %>"><img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt=""></a>
-                    <button class="card-btn">Buy now</button>
+                    <button class="card-btn"> <a href="Details?name=<%=prod.getNom() %>">BUY NOW</a></button>
                     
                 </div>
                 <div class="product-info">
@@ -56,61 +59,7 @@
            
     </section>
 
-    <section class="product">
-        <h2 class="product-category">Accessoires</h2>
-       <button class="pre-btn"><img src="assets/images/nextPage.png" alt=""></button>
-        <button class="nxt-btn"><img src="assets/images/nextPage.png" alt=""></button>
-        <div class="product-container">
- 				<% for(Products prod : listAccesoires) {  %>	
-            <div class="product-card">
-                <div class="product-image">
-
-                    <img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">Buy now</button>
-                    
-                </div>
-                <div class="product-info">
-                    <div class="type">
-                        <a href="#"><%= prod.getNom() %></a>
-                      
-                    </div>
-                    <!--price-------->
-                    <a href="#" class="price"><%= prod.getPrix() %>DH</a>
-                </div>
-            </div>
-            <%}%>
-            </div>
-              
-    </section>
-    <section class="product">
-        <h2 class="product-category">Food</h2>
-        <button class="pre-btn"><img src="assets/images/nextPage.png" alt=""></button>
-        <button class="nxt-btn"><img src="assets/images/nextPage.png" alt=""></button>
-        <div class="product-container">
- 				    <% for(Products prod : listToys) {%> 
- 		
-            <div class="product-card">
-                <div class="product-image">
-
-                    <img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">Buy now</button>
-                    
-                </div>
-                <div class="product-info">
-                    <div class="type">
-                        <a href="#"><%= prod.getNom() %></a>
-                      
-                    </div>
-                    <!--price-------->
-                    <a href="#" class="price"><%= prod.getPrix() %>DH</a>
-                </div>
-            </div>
-            <%}%>
-            </div>
-
-           
-    </section>
-
+  
 
 
 
@@ -121,6 +70,7 @@
              
         <div class="clear"></div>
         </div><!--end of left content-->
+      
       <%@ include file="include/rightContent.jsp" %>
         
             <div class="clear"></div>

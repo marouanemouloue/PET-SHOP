@@ -1,3 +1,10 @@
+<%@ page import ="java.util.ArrayList"%>
+    <%@ page import="ma.ensao.bean.*" %>
+        <%@ page import="ma.ensao.DAO.*" %>
+        <%	    ProductsDAO produitD = new ProductsDAO();
+
+    ArrayList<Products> listProm = new ArrayList<Products> ();
+    listProm=(ArrayList<Products>) produitD.getProductsOnProm(); %>
 <div class="right_content">
         
                 	<div class="languages_box">
@@ -27,16 +34,26 @@
              <div class="about">
              <p>
              <img src="assets/images/about.gif" alt="" title="" class="right" />
-             Buy pet foods and pet supplies online from the  friendliest online pet store. Excellent customer service and free delivery over $19.99.
+               Buy pet foods and pet supplies online from the  friendliest online pet store. Excellent customer service and free delivery over 19.99$.
              </p>
              
              </div>
              
              <div class="right_box">
              
-             	     
+             	<div class="title"><span class="title_icon"><img src="assets/images/bullet4.gif" alt="" title="" /></span>Promotions</div> 
+             	   <% for(Products prod : listProm) {%> 
+                    <div class="new_prod_box">
+                        <a href="details.html"><%= prod.getNom() %></a>
+                        <div class="new_prod_bg">
+                        <span class="new_icon"><img src="assets/images/promo_icon.gif" alt="" title="" /></span>
+                        <a href="details.html"><img src="assets/images/<%= prod.getImage() %>.png" alt="" title="" class="thumb" border="0" /></a>
+                        </div>           
+                    </div>
+                     <%}; %>
              
              </div>
+          
              
              <div class="right_box">
              

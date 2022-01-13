@@ -38,7 +38,7 @@
                 <div class="product-image">
 
                     <a href="Details?name=<%=prod.getNom() %>"><img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt=""></a>
-                    <button class="card-btn">Buy now</button>
+                    <button class="card-btn"> <a href="Details?name=<%=prod.getNom() %>">Buy NOW</a></button>
                     
                 </div>
                 <div class="product-info">
