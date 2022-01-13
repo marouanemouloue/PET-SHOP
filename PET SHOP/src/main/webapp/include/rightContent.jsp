@@ -1,4 +1,4 @@
-  <div class="right_content">
+<div class="right_content">
         
                 	<div class="languages_box">
             <span class="red">Languages:</span>
@@ -27,37 +27,14 @@
              <div class="about">
              <p>
              <img src="assets/images/about.gif" alt="" title="" class="right" />
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+             Buy pet foods and pet supplies online from the  friendliest online pet store. Excellent customer service and free delivery over $19.99.
              </p>
              
              </div>
              
              <div class="right_box">
              
-             	<div class="title"><span class="title_icon"><img src="assets/images/bullet4.gif" alt="" title="" /></span>Promotions</div> 
-                    <div class="new_prod_box">
-                        <a href="details.html">product name</a>
-                        <div class="new_prod_bg">
-                        <span class="new_icon"><img src="assets/images/promo_icon.gif" alt="" title="" /></span>
-                        <a href="details.html"><img src="assets/images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
-                        </div>           
-                    </div>
-                    
-                    <div class="new_prod_box">
-                        <a href="details.html">product name</a>
-                        <div class="new_prod_bg">
-                        <span class="new_icon"><img src="assets/images/promo_icon.gif" alt="" title="" /></span>
-                        <a href="details.html"><img src="assets/images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
-                        </div>           
-                    </div>                    
-                    
-                    <div class="new_prod_box">
-                        <a href="details.html">product name</a>
-                        <div class="new_prod_bg">
-                        <span class="new_icon"><img src="assets/images/promo_icon.gif" alt="" title="" /></span>
-                        <a href="details.html"><img src="assets/images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a>
-                        </div>           
-                    </div>             
+             	     
              
              </div>
              
@@ -66,31 +43,20 @@
              	<div class="title"><span class="title_icon"><img src="assets/images/bullet5.gif" alt="" title="" /></span>Categories</div> 
                 
                 <ul class="list">
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">hollidays gifts</a></li>
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">hollidays gifts</a></li>
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>                                              
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Accessories</a></li>
+                                                        
                 </ul>
                 
              	<div class="title"><span class="title_icon"><img src="assets/images/bullet6.gif" alt="" title="" /></span>Partners</div> 
                 
                 <ul class="list">
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">hollidays gifts</a></li>
-                <li><a href="#">accesories</a></li>
-                <li><a href="#">pets gifts</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">hollidays gifts</a></li>
-                <li><a href="#">accesories</a></li>                              
+                <li><a href="#">Maroc Telecom</a></li>
+                <li><a href="#">UNESCO</a></li>
+                <li><a href="#">WHO</a></li>
+                <li><a href="#">Animal World Organization</a></li>
+                                         
                 </ul>      
              
              </div>         
