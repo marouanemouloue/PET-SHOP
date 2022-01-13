@@ -1,6 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import ="java.util.ArrayList"%>
+    <%@ page import="ma.ensao.bean.*" %>
+        <%@ page import="ma.ensao.DAO.*" %>
 <!DOCTYPE html>
+  <%	    ProductsDAO produit = new ProductsDAO();
+
+    ArrayList<Products> listFood = new ArrayList<Products> ();
+    listFood=(ArrayList<Products>) produit.getProductsByCategory("Foods");
+    ArrayList<Products> listAccesoires = new ArrayList<Products> ();
+    listAccesoires=(ArrayList<Products>) produit.getProductsByCategory("Accessory");
+    ArrayList<Products> listToys = new ArrayList<Products> ();
+    listToys=(ArrayList<Products>) produit.getProductsByCategory("Toys");
+       
+       %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -16,26 +29,25 @@
       	
         	
 <section class="product">
-        <h2 class="product-category">best selling</h2>
-        <button class="pre-btn"><img src="assets/images/nextPage.png" alt=""></button>
-        <button class="nxt-btn"><img src="assets/images/nextPage.png" alt=""></button>
+        <h2 class="product-category">Food</h2>
+     
         <div class="product-container">
- 				<% for( int i=0;i<10;i++){  %>	
+ 				    <% for(Products prod : listFood) {%> 
  		
             <div class="product-card">
                 <div class="product-image">
 
-                    <img src="assets/images/pet2.jpg" class="product-thumb" alt="">
+                    <a href="Details?name=<%=prod.getNom() %>"><img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt=""></a>
                     <button class="card-btn">Buy now</button>
                     
                 </div>
                 <div class="product-info">
                     <div class="type">
-                        <a href="#">Rabbed Cardigan</a>
-                        <span>Noe Arrival</span>
+                        <a href="Details?name=<%=prod.getNom() %>"><%= prod.getNom() %></a>
+                      
                     </div>
                     <!--price-------->
-                    <a href="#" class="price">$23</a>
+                    <a href="Details?name=<%=prod.getNom() %>" class="price"><%= prod.getPrix() %>DH</a>
                 </div>
             </div>
             <%}%>
@@ -49,26 +61,54 @@
        <button class="pre-btn"><img src="assets/images/nextPage.png" alt=""></button>
         <button class="nxt-btn"><img src="assets/images/nextPage.png" alt=""></button>
         <div class="product-container">
- 				<% for( int i=0;i<10;i++){  %>	
+ 				<% for(Products prod : listAccesoires) {  %>	
             <div class="product-card">
                 <div class="product-image">
 
-                    <img src="assets/images/pet2.jpg" class="product-thumb" alt="">
+                    <img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt="">
                     <button class="card-btn">Buy now</button>
                     
                 </div>
                 <div class="product-info">
                     <div class="type">
-                        <a href="#">Rabbed Cardigan</a>
-                        <span>Noe Arrival</span>
+                        <a href="#"><%= prod.getNom() %></a>
+                      
                     </div>
                     <!--price-------->
-                    <a href="#" class="price">$23</a>
+                    <a href="#" class="price"><%= prod.getPrix() %>DH</a>
                 </div>
             </div>
             <%}%>
             </div>
               
+    </section>
+    <section class="product">
+        <h2 class="product-category">Food</h2>
+        <button class="pre-btn"><img src="assets/images/nextPage.png" alt=""></button>
+        <button class="nxt-btn"><img src="assets/images/nextPage.png" alt=""></button>
+        <div class="product-container">
+ 				    <% for(Products prod : listToys) {%> 
+ 		
+            <div class="product-card">
+                <div class="product-image">
+
+                    <img src="assets/images/<%= prod.getImage() %>.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Buy now</button>
+                    
+                </div>
+                <div class="product-info">
+                    <div class="type">
+                        <a href="#"><%= prod.getNom() %></a>
+                      
+                    </div>
+                    <!--price-------->
+                    <a href="#" class="price"><%= prod.getPrix() %>DH</a>
+                </div>
+            </div>
+            <%}%>
+            </div>
+
+           
     </section>
 
 
@@ -78,7 +118,7 @@
 
 
 
-            
+             
         <div class="clear"></div>
         </div><!--end of left content-->
       <%@ include file="include/rightContent.jsp" %>

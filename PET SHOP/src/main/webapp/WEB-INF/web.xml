@@ -19,5 +19,14 @@
     <servlet-name>RegisterUser</servlet-name>
     <url-pattern>/register.do</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <description></description>
+    <display-name>Details</display-name>
+    <servlet-name>Details</servlet-name>
+    <servlet-class>ma.ensao.servlet.Details</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Details</servlet-name>
+    <url-pattern>/Details</url-pattern>
+  </servlet-mapping>
 </web-app>
