@@ -21,7 +21,7 @@
 				</div>
 
 				<div class="feat_prod_box_details">
-					<p class="details">${msgSent ? "Thanks you for contacting us! We will be in touch with you shortly" : "Merci pour votre visite. Si vous vous demandez d'un service ou d'un produit de notre magasin, ou si vous avez un soucis avec votre compte, merci de nous contacter en envoyant vos informations et votre message suivant les cases à remplir dessous:" }
+					<p class="details">${msgSent ? "Thanks you for contacting us! We will contact you soon" : "Please fill this form" }
 					</p>
 
 					<div class="contact_form">
